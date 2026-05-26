@@ -612,13 +612,28 @@ export default function App() {
       </motion.main>
 
       <footer className="f">
-        <p className="f-tagline">Style Gen: Space Intelligence System.</p>
-        <div className="f-row">
-          <span>Obsidian Observatory Console</span>
-          <span aria-hidden="true">·</span>
-          <a href="#faq">Docs</a>
-          <span aria-hidden="true">·</span>
-          <span>v3.0.0</span>
+        <div className="f-inner">
+          <div className="f-left">
+            <div className="f-brand">
+              <span className="f-brand-mark">S</span>
+              <span className="f-brand-name">Style Gen</span>
+            </div>
+            <p className="f-copyright">© 2026 Style Gen. Built by Abdul Gafoor.</p>
+            <p className="f-secondary">Decode the visual intelligence behind interfaces.</p>
+          </div>
+          <div className="f-right">
+            <nav className="f-nav" aria-label="Footer Navigation">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="f-link">GitHub</a>
+              <a href="#faq" className="f-link">Docs</a>
+              <a href="mailto:contact@stylegen.dev" className="f-link f-contact-link">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" className="f-email-icon" aria-hidden="true">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+                <span>Contact</span>
+              </a>
+            </nav>
+          </div>
         </div>
       </footer>
 
